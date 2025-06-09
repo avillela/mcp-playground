@@ -1,4 +1,4 @@
-# mcp-playground
+# MCP Playground
 
 Playing around with MCP servers to figure out how it works.
 

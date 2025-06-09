@@ -17,6 +17,7 @@
       "envFile": "${workspaceFolder}/.env.av"
     },
 
+    // https://mcpmarket.com/server/linkedin-4
     "linkedin": {
       "type": "stdio",
       "command": "uvx",
@@ -43,7 +44,6 @@
     // https://github.com/brianellin/bsky-mcp-server
     "bluesky": {
       "command": "npx",
-      // "args": ["/path/to/bsky-mcp-server/build/src/index.js"],
       "args": ["-y", "@gthumb/bsky-mcp-server"],
       "envFile": "${workspaceFolder}/.env.av"
     },
