@@ -1,0 +1,73 @@
+{ 
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "github_token",
+      "description": "GitHub Personal Access Token",
+      "password": true
+    }
+  ],
+  "servers": {
+    // https://github.com/dynatrace-oss/dynatrace-mcp
+    "npx-dynatrace-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@dynatrace-oss/dynatrace-mcp-server@latest"],
+      // "args": ["-y", "@dynatrace-oss/dynatrace-mcp-server@0.1.3"],
+      "envFile": "${workspaceFolder}/.env.av"
+    },
+
+    "linkedin": {
+      "type": "stdio",
+      "command": "uvx",
+        "args": ["--from", "git+https://github.com/adhikasp/mcp-linkedin", "mcp-linkedin"],
+        "env": {
+            "LINKEDIN_EMAIL": "your_linkedin_email",
+            "LINKEDIN_PASSWORD": "your_linkedin_password"
+        }
+    },
+  
+    // https://github.com/EnesCinr/twitter-mcp
+    "twitter-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@enescinar/twitter-mcp"],
+      "env": {
+        "API_KEY": "your_api_key_here",
+        "API_SECRET_KEY": "your_api_secret_key_here",
+        "ACCESS_TOKEN": "your_access_token_here",
+        "ACCESS_TOKEN_SECRET": "your_access_token_secret_here"
+      }
+    },
+
+    // https://github.com/brianellin/bsky-mcp-server
+    "bluesky": {
+      "command": "npx",
+      // "args": ["/path/to/bsky-mcp-server/build/src/index.js"],
+      "args": ["-y", "@gthumb/bsky-mcp-server"],
+      "envFile": "${workspaceFolder}/.env.av"
+    },
+
+    // https://github.com/nabid-pf/youtube-video-summarizer-mcp
+    "youtube-video-summarizer": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "youtube-video-summarizer-mcp"]
+    },
+
+    // https://github.com/github/github-mcp-server
+    "github": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "envFile": "${workspaceFolder}/.env.av"
+    }
+  }
+}
