@@ -13,8 +13,8 @@ touch .env
 ```
 
 Where:
-* [`mcp.json`] is the MCP configuration file
-* [`.env`] is where environment variables used by the MCP servers (e.g. for auth) reside
+* `mcp.json` is the MCP configuration file
+* `.env` is where environment variables used by the MCP servers (e.g. for auth) reside
 
 ## Servers Configured
 

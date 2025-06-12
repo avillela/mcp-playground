@@ -1,19 +1,18 @@
 { 
-  "inputs": [
-    {
-      "type": "promptString",
-      "id": "github_token",
-      "description": "GitHub Personal Access Token",
-      "password": true
-    }
-  ],
+  // "inputs": [
+  //   {
+  //     "type": "promptString",
+  //     "id": "github_token",
+  //     "description": "GitHub Personal Access Token",
+  //     "password": true
+  //   }
+  // ],
   "servers": {
     // https://github.com/dynatrace-oss/dynatrace-mcp
     "npx-dynatrace-mcp-server": {
       "type": "stdio",
       "command": "npx",
       "args": ["-y", "@dynatrace-oss/dynatrace-mcp-server@latest"],
-      // "args": ["-y", "@dynatrace-oss/dynatrace-mcp-server@0.1.3"],
       "envFile": "${workspaceFolder}/.env.av"
     },
 
@@ -68,6 +67,6 @@
         "ghcr.io/github/github-mcp-server"
       ],
       "envFile": "${workspaceFolder}/.env.av"
-    }
+    },
   }
 }
