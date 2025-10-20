@@ -103,7 +103,7 @@ Here are the prompts to execute:
 * `/02-avg-response-time.prompt.md` -> Give me the avg response time per service in the astroshop namespace?
 * `/03-logs-associated-with-services.prompt.md` -> How many astroshop services have associated logs?
 * `/04-last-five-traces.prompt.md` -> Show me the last 5 traces, include spand id, trace is, start time, end time and number of associated logs for x service?
-* `/05-logs-associated-with-given-span.prompt.md` -> Show me the log messages for the latest span in Dynatrace.
+* `/05-logs-associated-with-given-span.prompt.md` -> Show me the latest log messages for the most  span in Dynatrace that has associated logs.
 
 ## Resources
 
