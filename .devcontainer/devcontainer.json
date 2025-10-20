@@ -5,14 +5,12 @@
       "ghcr.io/devcontainers/features/node:1": {},
       "ghcr.io/devcontainers-extra/features/kubectl-asdf:2": {},
       "ghcr.io/dhoeric/features/k9s:1": {},
-      // "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
       "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     },
     "overrideFeatureInstallOrder": [
         "ghcr.io/devcontainers/features/node",
         "ghcr.io/devcontainers-extra/features/kubectl-asdf",
         "ghcr.io/dhoeric/features/k9s",
-        // "ghcr.io/meaningful-ooo/devcontainer-features/homebrew",
     ],
     "hostRequirements": {
       "cpus": 4,
@@ -24,5 +22,4 @@
     },
     "containerUser": "vscode",
     "postCreateCommand": ".devcontainer/post-create.sh",
-    // "postStartCommand": ".devcontainer/post-start.sh",
   }
