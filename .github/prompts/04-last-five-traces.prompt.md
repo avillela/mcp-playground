@@ -4,7 +4,7 @@ model: GPT-4o
 tools: ['runCommands', 'npx-dynatrace-mcp-server']
 description: 'Show last 5 traces in Dynatrace'
 ---
-Your goal is to display the last 5 traces in Dynatrace for the Astroshop app.
+Your goal is to display the last 5 traces in Dynatrace.
 
 Requirements:
 * Get the last 5 traces Dynatrace
