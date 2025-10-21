@@ -4,11 +4,9 @@ model: GPT-4o
 tools: ['runCommands', 'npx-dynatrace-mcp-server']
 description: 'Print average response time per service'
 ---
-Your goal is to display the average response time for each service in Dynatrace.
+Your goal is to display the average response time and p50 response time for each service in Dynatrace.
 
 Requirements:
 * Fetch the names of all services running in Dynatrace
-* Calculate the average response time for each service
-* Display the average response time alongside the name of each service
-* Display the p50 response alongside the name of each service
+* Calculate the average response time for each service, and display next to the service name
 * Services should be displayed in alphabetical order
