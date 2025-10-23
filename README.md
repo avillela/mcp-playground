@@ -6,14 +6,14 @@ You can check out other MCP servers [here](https://github.com/modelcontextprotoc
 
 Check out my blog post on how to use the Dynatrace MCP server [here](https://dt-url.net/mcp-medium).
 
-## Enabling GitHub Copilot
+## Why use the Dynatrace MCP Server?
 
-To use [GitHub Copilot as your MCP client](https://code.visualstudio.com/docs/copilot/chat/mcp-servers#_use-mcp-tools-in-agent-mode), you'll have to enable it first. There is a free tier for Copilot that allows:
+This approach makes Dynatrace data accessible to team members who may not be familiar with DQL or APIs, democratizing observability data across your organization.
 
-* 50 agent mode or chat requests per month
-* 2,000 completions per month
-
-Learn more [here](https://github.com/features/copilot/plans).
+Key Takeaways:
+* Natural Language Queries: Interact with Dynatrace without writing complex API calls or DQL queries
+* Reusable Prompts: Save time with pre-built queries stored as files
+* AI-Powered Analysis: Let Copilot handle complex, multi-step queries automatically
 
 ## Setup
 
